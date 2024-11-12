@@ -1,17 +1,13 @@
-return {
-	"nvim-telescope/telescope.nvim",
-	after = function()
-		require("telescope").setup({})
+require("lz.n").load({
+	"telescope.nvim",
+	cmd = "Telescope",
+	load = function(name)
+		vim.cmd.packadd(name)
 	end,
-
 	keys = {
-		{
-			"<leader>ff",
-			function()
-				require("telescope.builtin").find_files()
-			end,
-			desc = "find files",
-			mode = "n",
-		},
-	}
-}
+		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "find files"},
+	},
+	after = function()
+		require("telescope").setup()
+	end,
+})
