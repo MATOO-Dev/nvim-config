@@ -122,22 +122,25 @@
           # this includes LSPs
           lspsAndRuntimeDeps = {
             general =
-              with pkgs;
-              [
-              ];
+              with pkgs; [ ];
           };
 
           # This is for plugins that will load at startup without using packadd:
           startupPlugins = {
             gitPlugins = with pkgs.neovimPlugins; [ ];
-            general = with pkgs.vimPlugins; [ ];
+            general = with pkgs.vimPlugins; [ 
+	    	plenary-nvim
+		lz-n
+	    ];
           };
 
           # not loaded automatically at startup.
           # use with packadd and an autocommand in config to achieve lazy loading
           optionalPlugins = {
             gitPlugins = with pkgs.neovimPlugins; [ ];
-            general = with pkgs.vimPlugins; [ ];
+	    general = with pkgs.vimPlugins; [ 
+	    	telescope-nvim 
+	    ];
           };
 
           # shared libraries to be added to LD_LIBRARY_PATH
