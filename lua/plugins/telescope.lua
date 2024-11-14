@@ -14,7 +14,7 @@
 
 return {
 	"telescope.nvim",
-	-- cmd = "Telescope",
+	cmd = "Telescope",
 	load = function(name)
 		vim.cmd.packadd(name)
 	end,

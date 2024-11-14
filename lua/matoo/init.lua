@@ -1,2 +1,2 @@
 require("matoo.remap")
-require("matoo.plugins.telescope")
+-- require("lz.n").load("matoo.plugins")
