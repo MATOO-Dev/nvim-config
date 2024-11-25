@@ -128,8 +128,8 @@
           startupPlugins = {
             gitPlugins = with pkgs.neovimPlugins; [ ];
             general = with pkgs.vimPlugins; [
+              lze
               plenary-nvim
-              lz-n
             ];
           };
 
