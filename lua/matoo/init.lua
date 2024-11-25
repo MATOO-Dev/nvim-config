@@ -1,2 +1,3 @@
 require("matoo.remap")
-require("lze").load(require("matoo.plugins"))
+require("matoo.plugins")
+-- require("lze").load(require("matoo.plugins"))
