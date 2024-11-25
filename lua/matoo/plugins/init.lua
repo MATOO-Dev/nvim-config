@@ -1,3 +1,3 @@
 return {
-	{ "telescope.nvim", cmd = "Telescope" },
+	{ "telescope.nvim" },
 }
