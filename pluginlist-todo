@@ -19,7 +19,7 @@ godot
 hardtime
 harpoon
 illuminate
-image
+image.nvim
 leap
 lsp
 lualine
@@ -31,7 +31,6 @@ nix
 noice
 notify
 obsidian
-oil
 replace-with-register
 scrollbar
 surround
