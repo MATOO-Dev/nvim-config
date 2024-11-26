@@ -2,5 +2,5 @@ require("matoo.plugins.oil")
 require("matoo.plugins.lualine")
 
 require("lze").load({
-	{ "telescope.nvim" },
+	{ import = "matoo.plugins.telescope" },
 })
