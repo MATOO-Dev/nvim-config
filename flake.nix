@@ -128,6 +128,7 @@
           startupPlugins = {
             gitPlugins = with pkgs.neovimPlugins; [ ];
             general = with pkgs.vimPlugins; [
+              lualine-nvim
               lze
               nvim-web-devicons
               oil-nvim

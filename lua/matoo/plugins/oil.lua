@@ -1,6 +1,6 @@
 require("nvim-web-devicons").setup()
 
-require("oil").setup({
+require("oil").setup {
 	default_file_explorer = true,
 	columns = {
 		"icon",
@@ -8,6 +8,6 @@ require("oil").setup({
 	use_default_keymaps = true,
 	keymaps = {
 	},
-})
+}
 
 vim.keymap.set("n", "<leader>ol", "<cmd>Oil<cr>")
