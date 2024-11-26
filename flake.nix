@@ -130,6 +130,7 @@
             general = with pkgs.vimPlugins; [
               lualine-nvim
               lze
+              monokai-pro-nvim
               nvim-web-devicons
               oil-nvim
               plenary-nvim
@@ -141,6 +142,8 @@
           optionalPlugins = {
             gitPlugins = with pkgs.neovimPlugins; [ ];
             general = with pkgs.vimPlugins; [
+              nvim-treesitter-textobjects
+              nvim-treesitter.withAllGrammars
               telescope-nvim
             ];
           };

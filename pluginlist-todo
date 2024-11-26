@@ -22,7 +22,6 @@ illuminate
 image.nvim
 leap
 lsp
-lualine
 luasnip
 monokai-pro
 navbuddy
@@ -35,7 +34,6 @@ replace-with-register
 scrollbar
 surround
 tagbar
-telescope
 tmux-navigator
 treesitter
 trouble
