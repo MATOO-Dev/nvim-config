@@ -129,6 +129,7 @@
             gitPlugins = with pkgs.neovimPlugins; [ ];
             general = with pkgs.vimPlugins; [
               lze
+              nvim-web-devicons
               oil-nvim
               plenary-nvim
             ];

@@ -1,10 +1,13 @@
-vim.g.loaded_netrwplugin = 1
+require("nvim-web-devicons").setup()
+
 require("oil").setup({
 	default_file_explorer = true,
 	columns = {
 		"icon",
 	},
+	use_default_keymaps = true,
 	keymaps = {
-		["<leader>ol"] = "actions.parent",
 	},
 })
+
+vim.keymap.set("n", "<leader>ol", "<cmd>Oil<cr>")
