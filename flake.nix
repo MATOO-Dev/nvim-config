@@ -121,7 +121,25 @@
           # at RUN TIME for plugins. Will be available to PATH within neovim terminal
           # this includes LSPs
           lspsAndRuntimeDeps = {
-            general = with pkgs; [ ];
+            general = with pkgs; [
+              # CSharp
+              csharp-ls
+              # Java
+              java-language-server
+              # Lua
+              lua-language-server
+              # Markdown
+              marksman
+              # Nix
+              nixd
+              nil
+              # Rust
+              rust-analyzer
+              # LaTeX
+              texlab
+              # Typst
+              tinymist
+            ];
           };
 
           # This is for plugins that will load at startup without using packadd:
@@ -143,6 +161,7 @@
             gitPlugins = with pkgs.neovimPlugins; [ ];
             general = with pkgs.vimPlugins; [
               nvim-autopairs
+              nvim-lspconfig
               nvim-treesitter-textobjects
               nvim-treesitter.withAllGrammars
               telescope-nvim
