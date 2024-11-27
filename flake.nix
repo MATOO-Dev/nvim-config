@@ -142,6 +142,7 @@
           optionalPlugins = {
             gitPlugins = with pkgs.neovimPlugins; [ ];
             general = with pkgs.vimPlugins; [
+              nvim-autopairs
               nvim-treesitter-textobjects
               nvim-treesitter.withAllGrammars
               telescope-nvim

@@ -6,9 +6,10 @@ return {
 		vim.cmd.packadd("nvim-treesitter-textobjects")
 	end,
 	after = function ()
-		require("nvim-treesitter-configs").setup {
+		require("nvim-treesitter.configs").setup {
 			highlight = { enable = true, },
-			indent = { enable = false, },
+			indent = { enable = true, },
+			auto_install = false,
 		}
 	end
 }
