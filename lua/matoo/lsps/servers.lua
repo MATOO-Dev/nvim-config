@@ -1,14 +1,12 @@
 return {
 	lua_ls = {
-		cmd = "lua-language-server",
-		settings = {
-			Lua = {
-				diagnostics = {
-					globals = { "vim" },
-				},
-			},
-		},
-	},
-	nixd = {
+		-- cmd = "lua-language-server",
+		-- settings = {
+		-- 	Lua = {
+		-- 		diagnostics = {
+		-- 			globals = { "vim" },
+		-- 		},
+		-- 	},
+		-- },
 	},
 }

@@ -4,7 +4,7 @@ require("lze").load {
 	after = function()
 		-- todo: general lsp config goes here
 		-- todo: define keybinds for lsp operations, ie rename
-		local servers = { import = "matoo.lsps.servers" }
+		local servers = require("matoo.lsps.servers")
 		for server, config in pairs(servers) do
 			require("lspconfig")[server].setup(config)
 		end
