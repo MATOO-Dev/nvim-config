@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 
+-- keep the screen centered when jumping up/down
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-f>", "<C-f>zz")
