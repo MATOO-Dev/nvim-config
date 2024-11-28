@@ -1,12 +1,12 @@
-return {
+require("lze").load {
 	"nvim-lspconfig",
-	cmd = "Telescope",
-	keys = {
-		{ "<leader>ff" },
-	},
+	event = "BufEnter",
 	after = function()
-		require("telescope").setup()
-		local builtin = require("telescope.builtin")
-		vim.keymap.set("n", "<leader>ff", builtin.find_files)
+		-- todo: general lsp config goes here
+		-- todo: define keybinds for lsp operations, ie rename
+		local servers = { import = "matoo.lsps.servers" }
+		for server, config in pairs(servers) do
+			require("lspconfig")[server].setup(config)
+		end
 	end,
 }
