@@ -7,6 +7,7 @@ require("oil").setup {
 	},
 	use_default_keymaps = true,
 	keymaps = {
+		["<bs>"] = "actions.parent"
 	},
 }
 

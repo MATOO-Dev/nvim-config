@@ -146,7 +146,6 @@
           startupPlugins = {
             gitPlugins = with pkgs.neovimPlugins; [ ];
             general = with pkgs.vimPlugins; [
-              lualine-nvim
               lze
               monokai-pro-nvim
               nvim-web-devicons
@@ -160,6 +159,7 @@
           optionalPlugins = {
             gitPlugins = with pkgs.neovimPlugins; [ ];
             general = with pkgs.vimPlugins; [
+              lualine-nvim
               nvim-autopairs
               nvim-lspconfig
               nvim-treesitter-textobjects
