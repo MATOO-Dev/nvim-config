@@ -163,6 +163,7 @@
 						general = with pkgs.vimPlugins; [
 							lualine-nvim
 							nvim-autopairs
+							nvim-cmp
 							nvim-lspconfig
 							nvim-treesitter-textobjects
 							nvim-treesitter.withAllGrammars
