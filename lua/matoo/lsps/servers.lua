@@ -1,4 +1,6 @@
 return {
+	clangd = {
+	},
 	lua_ls = {
 		settings = {
 			Lua = {
