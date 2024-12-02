@@ -1,6 +1,5 @@
 return {
 	lua_ls = {
-		cmd = { "lua-language-server" },
 		settings = {
 			Lua = {
 				diagnostics = {
@@ -8,5 +7,21 @@ return {
 				},
 			},
 		},
+	},
+    csharp_ls = {
+	},
+    java_language_server = {
+	},
+    marksman = {
+	},
+    nixd = {
+	},
+    nil_ls = {
+	},
+    rust_analyzer = {
+	},
+    texlab = {
+	},
+    tinymist = {
 	},
 }
