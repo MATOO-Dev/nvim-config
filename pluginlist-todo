@@ -21,6 +21,7 @@ harpoon
 illuminate
 image.nvim
 lsp
+lspkind
 luasnip
 navbuddy
 navic
