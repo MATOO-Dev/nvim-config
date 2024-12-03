@@ -165,10 +165,10 @@
 							nvim-cmp
 							luasnip
 							cmp_luasnip
-							# cmp-buffer
-							# cmp-path
-							# cmp-nvim-lsp
-							# cmp-nvim-lua
+							cmp-buffer
+							cmp-path
+							cmp-nvim-lsp
+							cmp-nvim-lua
 							friendly-snippets
 							# status
 							lualine-nvim
