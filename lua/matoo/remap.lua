@@ -27,5 +27,5 @@ vim.keymap.set("n", "<cr>", "o<esc>")
 vim.keymap.set("n", "<s-cr>", "O<esc>")
 
 -- go to next/previous buffer with count support
-vim.keymap.set("n", "gt", function () return ":<c-u>" .. vim.v.count1 .. "bnext<cr>" end)
-vim.keymap.set("n", "Gt", function () return ":<c-u>" .. vim.v.count1 .. "bprev<cr>" end)
+vim.keymap.set("n", "gt", '":<c-u>" .. v:count1 .. "bnext<cr>"', {expr = true})
+vim.keymap.set("n", "gT", '":<c-u>" .. v:count1 .. "bprev<cr>"', {expr = true})
