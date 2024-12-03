@@ -1,5 +1,4 @@
 barbecue
-cmp
 codesnap
 colortils
 comment
@@ -20,9 +19,7 @@ hardtime
 harpoon
 illuminate
 image.nvim
-lsp
 lspkind
-luasnip
 navbuddy
 navic
 nix
