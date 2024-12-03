@@ -161,14 +161,24 @@
 					optionalPlugins = {
 						gitPlugins = with pkgs.neovimPlugins; [ ];
 						general = with pkgs.vimPlugins; [
-							cmp_luasnip
-							lualine-nvim
-							luasnip
-							nvim-autopairs
+							# completion
 							nvim-cmp
+							luasnip
+							cmp_luasnip
+							# cmp-buffer
+							# cmp-path
+							# cmp-nvim-lsp
+							# cmp-nvim-lua
+							friendly-snippets
+							# status
+							lualine-nvim
+							# editing
+							nvim-autopairs
+							# lsp etc
 							nvim-lspconfig
 							nvim-treesitter-textobjects
 							nvim-treesitter.withAllGrammars
+							# navigation
 							telescope-nvim
 						];
 					};
