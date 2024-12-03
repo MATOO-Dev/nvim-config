@@ -161,7 +161,9 @@
 					optionalPlugins = {
 						gitPlugins = with pkgs.neovimPlugins; [ ];
 						general = with pkgs.vimPlugins; [
+							cmp_luasnip
 							lualine-nvim
+							luasnip
 							nvim-autopairs
 							nvim-cmp
 							nvim-lspconfig
