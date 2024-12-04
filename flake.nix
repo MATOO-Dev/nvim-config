@@ -175,6 +175,7 @@
 							lualine-nvim
 							# editing
 							nvim-autopairs
+							vim-move
 							# lsp etc
 							nvim-lspconfig
 							nvim-treesitter-textobjects

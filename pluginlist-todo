@@ -19,7 +19,6 @@ hardtime
 harpoon
 illuminate
 image.nvim
-lspkind
 navbuddy
 navic
 nix
@@ -38,4 +37,3 @@ typst
 typst-preview
 ufo
 undotree
-vim-move
