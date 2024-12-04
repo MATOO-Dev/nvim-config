@@ -4,6 +4,7 @@ return {
 	{ "cmp-path" },
 	{ "cmp-nvim-lsp" },
 	{ "cmp-nvim-lua" },
+	{ "cmp-nvim-lsp-signature-help" },
 	{
 		"friendly-snippets",
 		dep_of = "nvim-cmp",
@@ -130,6 +131,7 @@ return {
 				sources = cmp.config.sources {
 					{ name = "nvim_lsp" },
 					{ name = "nvim_lsp_lua" },
+					{ name = "nvim_lsp_signature_help" },
 					{ name = "path" },
 					{ name = "luasnip" },
 					{ name = "buffer" },

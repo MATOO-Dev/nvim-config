@@ -169,6 +169,7 @@
 							cmp-path
 							cmp-nvim-lsp
 							cmp-nvim-lua
+							cmp-nvim-lsp-signature-help
 							lspkind-nvim
 							friendly-snippets
 							# status
@@ -184,6 +185,7 @@
 							telescope-nvim
 							hardtime-nvim
 							nvim-ufo
+							indent-blankline-nvim
 						];
 					};
 
