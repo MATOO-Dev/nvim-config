@@ -1,5 +1,10 @@
 return {
 	clangd = {
+		cmd = {
+			"clangd",
+			"--completion-style=detailed",
+			"--function-arg-placeholders",
+		}
 	},
 	lua_ls = {
 		settings = {

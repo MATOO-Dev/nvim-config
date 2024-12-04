@@ -17,6 +17,7 @@ gitsigns
 godot
 harpoon
 illuminate
+indent-blankline
 image.nvim
 navbuddy
 navic
