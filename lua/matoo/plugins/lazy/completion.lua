@@ -1,6 +1,6 @@
 return {
 	{ "cmp_luasnip" },
-	{ "cmp-buffer" },
+	-- { "cmp-buffer" },
 	{ "cmp-path" },
 	{ "cmp-nvim-lsp" },
 	{ "cmp-nvim-lua" },
@@ -134,7 +134,7 @@ return {
 					{ name = "nvim_lsp_signature_help" },
 					{ name = "path" },
 					{ name = "luasnip" },
-					{ name = "buffer" },
+					-- { name = "buffer" },
 				},
 			}
 		end,

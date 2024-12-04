@@ -13,7 +13,6 @@ floaterm
 fugitive
 fzf
 gitignore
-gitsigns
 godot
 harpoon
 illuminate
@@ -36,3 +35,4 @@ trouble
 typst
 typst-preview
 undotree
+whichkey

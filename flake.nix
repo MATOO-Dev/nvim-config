@@ -185,7 +185,9 @@
 							telescope-nvim
 							hardtime-nvim
 							nvim-ufo
+							# visual fanciness
 							indent-blankline-nvim
+							gitsigns-nvim
 						];
 					};
 
