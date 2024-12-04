@@ -9,6 +9,37 @@ return {
 		dep_of = "nvim-cmp",
 	},
 	{
+		"lspkind.nvim",
+		dep_of = "nvim-cmp",
+		symbol_map = {
+			Text = "󰉿",
+			Method = "󰆧",
+			Function = "󰊕",
+			Constructor = "",
+			Field = "󰜢",
+			Variable = "󰀫",
+			Class = "󰠱",
+			Interface = "",
+			Module = "",
+			Property = "󰜢",
+			Unit = "󰑭",
+			Value = "󰎠",
+			Enum = "",
+			Keyword = "󰌋",
+			Snippet = "",
+			Color = "󰏘",
+			File = "󰈙",
+			Reference = "󰈇",
+			Folder = "󰉋",
+			EnumMember = "",
+			Constant = "󰏿",
+			Struct = "󰙅",
+			Event = "",
+			Operator = "󰆕",
+			TypeParameter = "",
+		},
+	},
+	{
 		"luasnip",
 		dep_of = "nvim-cmp",
 		after = function()
@@ -35,11 +66,27 @@ return {
 		after = function()
 			local cmp = require("cmp")
 			local luasnip = require("luasnip")
+			local lspkind = require("lspkind")
 			cmp.setup {
 				snippet = {
 					expand = function(args)
 						luasnip.lsp_expand(args.body)
 					end
+				},
+				formatting = {
+					format = lspkind.cmp_format {
+						mode = "symbol_text",
+						with_text = true,
+						maxwidth = 50,
+						ellipsis_char = "...",
+						menu = {
+							buffer = "[BUF]",
+							nvim_lsp = "[LSP]",
+							nvim_lsp_lua = "[VIM]",
+							path = "[PATH]",
+							cmp_luasnip = "[SNIP]",
+						}
+					},
 				},
 				completion = {completeopt = "menu,menuone,preview"},
 				experimental = {

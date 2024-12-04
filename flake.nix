@@ -169,6 +169,7 @@
 							cmp-path
 							cmp-nvim-lsp
 							cmp-nvim-lua
+							lspkind-nvim
 							friendly-snippets
 							# status
 							lualine-nvim
