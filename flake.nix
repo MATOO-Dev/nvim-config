@@ -182,6 +182,7 @@
 							nvim-treesitter.withAllGrammars
 							# navigation
 							telescope-nvim
+							hardtime-nvim
 						];
 					};
 
