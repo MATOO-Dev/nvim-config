@@ -183,6 +183,7 @@
 							# navigation
 							telescope-nvim
 							hardtime-nvim
+							nvim-ufo
 						];
 					};
 

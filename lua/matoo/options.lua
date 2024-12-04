@@ -21,8 +21,11 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 -- unfold everything when opening a file
-vim.opt.foldmethod = "expr"
+vim.opt.foldcolumn = "1"
+vim.opt.foldenable = true
+-- vim.opt.foldmethod = "expr"
 vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
 
 -- dont show insert/visual/etc mode, deferred to status bar plugin
 vim.opt.showmode = false
