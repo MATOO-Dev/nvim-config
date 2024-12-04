@@ -14,7 +14,7 @@ end
 
 require("lze").load {
 	"nvim-lspconfig",
-	event = "BufEnter",
+	event = "FileType",
 	after = function()
 		-- todo: general lsp config goes here
 		vim.diagnostic.config {
@@ -30,6 +30,7 @@ require("lze").load {
 				cmd = (config or {}).cmd,
 				root_pattern = (config or {}).root_pattern,
 			})
+			-- vim.api.nvim_exec_autocmds("FileType", {})
 		end
 	end,
 }
