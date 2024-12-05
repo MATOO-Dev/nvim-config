@@ -111,7 +111,7 @@
           ...
         }@packageDef:
         {
-          # to define and use a new category, simply add a new list to a set here, 
+          # to define and use a new category, simply add a new list to a set here,
           # and later, you will include categoryname = true; in the set you
           # provide when you build the package using this builder function.
           # see :help nixCats.flake.outputs.packageDefinitions for info on that section.
@@ -145,6 +145,7 @@
               alejandra
               astyle
               csharpier
+              gdformat
               nixfmt-rfc-style
               rustfmt
               stylua

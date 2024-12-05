@@ -9,6 +9,7 @@ return {
 				c = { "astyle" },
 				cpp = { "astyle" },
 				cs = { "csharpier" },
+				gdscript = { "gdformat" },
 				java = { "astyle" },
 				nix = { "alejandra", "nixfmt" },
 				rust = { "rustfmt" },
