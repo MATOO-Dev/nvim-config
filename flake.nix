@@ -188,6 +188,10 @@
 							# visual fanciness
 							indent-blankline-nvim
 							gitsigns-nvim
+							#typst
+							typst-vim
+							typst-preview-nvim
+							typst-conceal-vim
 						];
 					};
 
