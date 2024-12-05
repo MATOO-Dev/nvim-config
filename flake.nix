@@ -193,6 +193,9 @@
 							typst-vim
 							typst-preview-nvim
 							typst-conceal-vim
+							# extra menus
+							trouble-nvim
+							undotree
 						];
 					};
 

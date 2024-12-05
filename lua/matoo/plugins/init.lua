@@ -12,5 +12,7 @@ require("lze").load({
 	{ import = "matoo.plugins.lazy.telescope" },
 	{ import = "matoo.plugins.lazy.tmux-navigator" },
 	{ import = "matoo.plugins.lazy.treesitter" },
+	{ import = "matoo.plugins.lazy.trouble" },
 	{ import = "matoo.plugins.lazy.typst" },
+	{ import = "matoo.plugins.lazy.undotree" },
 })
