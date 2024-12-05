@@ -1,22 +1,18 @@
 # Copyright (c) 2023 BirdeeHub
 # Licensed under the MIT license
-
 # This is an empty nixCats config.
 # you may import this template directly into your nvim folder
 # and then add plugins to categories here,
 # and call the plugins with their default functions
 # within your lua, rather than through the nvim package manager's method.
 # Use the help, and the example config github:BirdeeHub/nixCats-nvim?dir=templates/example
-
 # It allows for easy adoption of nix,
 # while still providing all the extra nix features immediately.
 # Configure in lua, check for a few categories, set a few settings,
 # output packages with combinations of those categories and settings.
-
 # All the same options you make here will be automatically exported in a form available
 # in home manager and in nixosModules, as well as from other flakes.
 # each section is tagged with its relevant help section.
-
 {
   description = "MATOO's personal nvim config, built with nixCats";
 
@@ -37,7 +33,6 @@
     # overlay defined for custom builds in the overlays directory.
     # for specific tags, branches and commits, see:
     # https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-flake.html#examples
-
   };
 
   # see :help nixCats.flake.outputs
@@ -82,7 +77,8 @@
         (forEachSystem (
           system:
           let
-            dependencyOverlays = # (import ./overlays inputs) ++
+            dependencyOverlays =
+              # (import ./overlays inputs) ++
               [
                 # This overlay grabs all the inputs named in the format
                 # `plugins-<pluginName>`
@@ -145,12 +141,15 @@
               alejandra
               astyle
               csharpier
-              gdformat
+              gdtoolkit_4
               nixfmt-rfc-style
               rustfmt
               stylua
               tex-fmt
               typstyle
+              #lint
+              #debuggers
+              gdb
             ];
           };
 
@@ -210,6 +209,10 @@
               comment-nvim
               conform-nvim
               nvim-surround
+              #DAP
+              nvim-dap
+              nvim-dap-ui
+              nvim-dap-virtual-text
             ];
           };
 
@@ -247,7 +250,7 @@
           # vim.g.python3_host_prog
           # or run from nvim terminal via :!<packagename>-python3
           extraPython3Packages = {
-            test = (_: [ ]);
+            test = _: [ ];
           };
           # populates $LUA_PATH and $LUA_CPATH
           extraLuaPackages = {
@@ -299,7 +302,6 @@
       # to the name of the packageDefinitions entry you wish to use as the default.
       defaultPackageName = "nvim";
     in
-
     # see :help nixCats.flake.outputs.exports
     forEachSystem (
       system:
@@ -335,11 +337,9 @@
             shellHook = '''';
           };
         };
-
       }
     )
     // {
-
       # these outputs will be NOT wrapped with ${system}
 
       # this will make an overlay out of each of the packageDefinitions defined above
@@ -375,5 +375,4 @@
       inherit utils;
       inherit (utils) templates;
     };
-
 }
