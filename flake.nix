@@ -196,6 +196,10 @@
 							# extra menus
 							trouble-nvim
 							undotree
+							# text management
+							comment-nvim
+							conform-nvim
+							nvim-surround
 						];
 					};
 

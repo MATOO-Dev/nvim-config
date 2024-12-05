@@ -1,13 +1,13 @@
 ##################
 #### top prio ####
 ##################
-dap
-flash
 comment
 conform
+surround
+dap
+flash
 obsidian
 scrollbar
-surround
 godot
 gitignore
 
