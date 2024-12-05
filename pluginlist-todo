@@ -1,26 +1,24 @@
 ##################
 #### top prio ####
 ##################
-trouble
-undotree
+dap
+flash
+comment
+conform
+obsidian
+scrollbar
+surround
+godot
+gitignore
 
 ##################
 #### mid prio ####
 ##################
-comment
-conform
-dap
-flash
 floaterm
 fugitive
-gitignore
-godot
 illuminate
 image.nvim
 navbuddy
-obsidian
-scrollbar
-surround
 treesj
 
 ##################
