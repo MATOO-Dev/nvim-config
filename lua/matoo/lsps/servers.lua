@@ -4,7 +4,7 @@ return {
 			"clangd",
 			"--completion-style=detailed",
 			"--function-arg-placeholders",
-		}
+		},
 	},
 	lua_ls = {
 		Lua = {
@@ -13,20 +13,24 @@ return {
 			},
 		},
 	},
-    csharp_ls = {
+	csharp_ls = {},
+	java_language_server = {},
+	marksman = {},
+	nixd = {
+		nixpkgs = {
+			expr = "import <nixpkgs> { }",
+		},
+		options = {
+			nixos = {
+				expr = '(builtins.getFlake"/home/matoo/dotfiles").nixosConfigurations.desktop.options',
+			},
+			home_manager = {
+				expr = '(builtins.getFlake"/home/matoo/dotfiles").homeConfigurations.user.options',
+			},
+		},
 	},
-    java_language_server = {
-	},
-    marksman = {
-	},
-    nixd = {
-	},
-    nil_ls = {
-	},
-    rust_analyzer = {
-	},
-    texlab = {
-	},
-    tinymist = {
-	},
+	nil_ls = {},
+	rust_analyzer = {},
+	texlab = {},
+	tinymist = {},
 }

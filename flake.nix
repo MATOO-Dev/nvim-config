@@ -142,6 +142,7 @@
               # Typst
               tinymist
               # formatters
+              alejandra
               astyle
               csharpier
               nixfmt-rfc-style

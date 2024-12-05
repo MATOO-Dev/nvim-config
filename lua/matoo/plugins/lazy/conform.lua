@@ -10,7 +10,7 @@ return {
 				cpp = { "astyle" },
 				cs = { "csharpier" },
 				java = { "astyle" },
-				nix = { "nixfmt" },
+				nix = { "alejandra", "nixfmt" },
 				rust = { "rustfmt" },
 				tex = { "tex-fmt" },
 				typst = { "typstyle" },
