@@ -1,10 +1,7 @@
 ##################
 #### top prio ####
 ##################
-tmux-navigator
 trouble
-typst
-typst-preview
 undotree
 
 ##################

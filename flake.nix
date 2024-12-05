@@ -185,6 +185,7 @@
 							telescope-nvim
 							hardtime-nvim
 							nvim-ufo
+							vim-tmux-navigator
 							# visual fanciness
 							indent-blankline-nvim
 							gitsigns-nvim
