@@ -1,6 +1,10 @@
 return {
-	-- "Comment.nvim",
-	-- after = function ()
-	-- 	require("Comment").setup()
-	-- end
+	"comment.nvim",
+	event = "BufEnter",
+	keys = { "gc", "gcc", "gbc" },
+	after = function()
+		require("Comment").setup({
+			sticky = false,
+		})
+	end,
 }
