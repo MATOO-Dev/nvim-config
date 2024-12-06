@@ -2,7 +2,8 @@ local dap = require("dap")
 
 dap.adapters.gdb = {
 	type = "executable",
-	command = "gdb",
+	-- command = "gdb",
+	command = vim.fn.exepath("gdb"),
 	args = { "--interpreter=dap", "--eval-command", "set print pretty on" },
 }
 
