@@ -15,6 +15,7 @@ return {
 	},
 	csharp_ls = {},
 	java_language_server = {},
+	jdtls = {},
 	marksman = {},
 	nixd = {
 		nixpkgs = {
