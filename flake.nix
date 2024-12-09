@@ -123,7 +123,6 @@
               # CSharp
               csharp-ls
               # Java
-              java-language-server
               jdt-language-server
               # Lua
               lua-language-server
