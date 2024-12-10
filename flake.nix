@@ -214,6 +214,8 @@
               nvim-dap
               nvim-dap-ui
               nvim-dap-virtual-text
+              #java
+              nvim-jdtls
             ];
           };
 
