@@ -7,13 +7,14 @@ dap.adapters.gdb = {
 	args = { "--interpreter=dap", "--eval-command", "set print pretty on" },
 }
 
-dap.configurations.c = {
+dap.configurations.c = dap.configurations.cpp
+dap.configurations.cpp = {
 	{
-		name = "Launch C debugger",
+		name = "GDB Debug",
 		type = "gdb",
 		request = "launch",
 		cwd = "${workspaceFolder}",
-		stopAtBeginningOfMainSubprogram = false,
+		stopAtBeginningOfMainSubprogram = true,
 		program = function()
 			return vim.fn.input("Path to executable:", vim.fn.getcwd() .. "/", "file")
 		end,

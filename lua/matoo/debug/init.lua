@@ -23,7 +23,7 @@ require("lze").load({
 			local virt = require("nvim-dap-virtual-text")
 
 			vim.keymap.set("n", "<f5>", dap.continue, { desc = "Debug: Start/Continue" })
-			vim.keymap.set("n", "<c-f5>", dap.stop, { desc = "Debug: Stop" })
+			vim.keymap.set("n", "<c-f5>", dap.close, { desc = "Debug: Stop" })
 			vim.keymap.set("n", "<c-s-f5>", dap.restart, { desc = "Debug: Restart" })
 			vim.keymap.set("n", "<f10>", dap.step_over, { desc = "Debug: Step over" })
 			vim.keymap.set("n", "<f11>", dap.step_into, { desc = "Debug: Step into" })
