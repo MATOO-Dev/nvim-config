@@ -150,6 +150,7 @@
               #lint
               #debuggers
               gdb
+              netcoredbg
             ];
           };
 

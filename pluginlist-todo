@@ -1,6 +1,7 @@
 ##################
 #### top prio ####
 ##################
+nvim-jdtls
 dap
 flash
 obsidian
