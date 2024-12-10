@@ -25,7 +25,7 @@ treesj
 barbecue
 codesnap
 colortils
-overseer/compiler
+overseer
 cursorline
 dashboard
 dropbar
@@ -33,10 +33,12 @@ firenvim
 fzf
 harpoon
 navic
+neotest
 nix
 noice
 notify
 orgmode
+project
 replace-with-register
 supertab
 tagbar

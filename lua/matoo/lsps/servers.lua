@@ -14,6 +14,8 @@ return {
 		},
 	},
 	csharp_ls = {},
+	gdscript = {},
+	gdshader_lsp = {},
 	jdtls = {},
 	marksman = {},
 	nixd = {
