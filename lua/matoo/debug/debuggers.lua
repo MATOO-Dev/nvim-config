@@ -5,9 +5,16 @@ local dap = require("dap")
 ------------------------
 
 dap.adapters.gdb = {
+	name = "gdb",
 	type = "executable",
 	command = vim.fn.exepath("gdb"),
 	args = { "--interpreter=dap", "--eval-command", "set print pretty on" },
+}
+
+dap.adapters.lldb = {
+	name = "lldb",
+	type = "executable",
+	command = vim.fn.exepath("lldb"),
 }
 
 dap.configurations.c = dap.configurations.cpp
@@ -23,6 +30,16 @@ dap.configurations.cpp = {
 			return vim.fn.input("Path to executable:", vim.fn.getcwd() .. "/", "file")
 		end,
 	},
+	{
+		name = "LLDB Debug",
+		type = "lldb",
+		request = "launch",
+		cwd = "${workspaceFolder}",
+		stopAtBeginningOfMainSubprogram = true,
+		program = function()
+			return vim.fn.input("Path to executable:", vim.fn.getcwd() .. "/", "file")
+		end,
+	},
 }
 
 ------------
@@ -30,6 +47,7 @@ dap.configurations.cpp = {
 ------------
 
 dap.adapters.coreclr = {
+	name = "coreclr",
 	type = "executable",
 	command = vim.fn.exepath("netcoredbg"),
 	args = { "--interpreter=vscode" },
@@ -53,6 +71,7 @@ dap.configurations.cs = {
 ------------------
 
 dap.adapters.godot = {
+	name = "Godot",
 	type = "server",
 	host = "127.0.0.1",
 	port = 6006,

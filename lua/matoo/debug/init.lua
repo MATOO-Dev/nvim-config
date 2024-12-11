@@ -21,7 +21,7 @@ require("lze").load({
 		after = function()
 			local dap = require("dap")
 			local ui = require("dapui")
-			local nio = require("nio")
+			require("nio")
 			local virt = require("nvim-dap-virtual-text")
 
 			vim.keymap.set("n", "<f5>", dap.continue, { desc = "Debug: Start/Continue" })

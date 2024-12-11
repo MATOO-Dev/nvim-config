@@ -60,6 +60,3 @@ vim.opt.isfname:append("@-@")
 
 -- fast updatetime
 vim.opt.updatetime = 50
-
--- modifiable
-vim.opt.modifiable = true
