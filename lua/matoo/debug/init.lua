@@ -14,12 +14,14 @@ require("lze").load({
 		},
 		load = function(name)
 			vim.cmd.packadd(name)
+			vim.cmd.packadd("nvim-nio")
 			vim.cmd.packadd("nvim-dap-ui")
 			vim.cmd.packadd("nvim-dap-virtual-text")
 		end,
 		after = function()
 			local dap = require("dap")
 			local ui = require("dapui")
+			local nio = require("nio")
 			local virt = require("nvim-dap-virtual-text")
 
 			vim.keymap.set("n", "<f5>", dap.continue, { desc = "Debug: Start/Continue" })
@@ -44,10 +46,18 @@ require("lze").load({
 			ui.setup()
 			virt.setup({
 				enabled = true,
+				enabled_commands = true,
+				highlight_changed_variables = true,
+				highlight_new_as_changed = true,
+				shop_stop_reason = true,
+				commented = false,
+				only_first_definition = true,
+				all_references = false,
+				clear_on_continue = false,
 
-				display_callback = function(variable, options)
-					if options.virt.virt_text_pos == "inline" then
-						return ""
+				display_callback = function(variable, buf, stackframe, node, options)
+					if options.virt_text_pos == "inline" then
+						return " = " .. variable.value:gsub("%s+", " ")
 					else
 						return variable.name .. " = " .. variable.value
 					end

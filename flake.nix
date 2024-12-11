@@ -212,6 +212,7 @@
               nvim-surround
               #DAP
               nvim-dap
+              nvim-nio
               nvim-dap-ui
               nvim-dap-virtual-text
               #java
