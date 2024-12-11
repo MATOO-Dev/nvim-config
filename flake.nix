@@ -152,6 +152,7 @@
               gdb
               lldb
               netcoredbg
+              one-small-step-for-vimkind
             ];
           };
 

@@ -66,6 +66,16 @@ dap.configurations.cs = {
 ---- Nvim Lua ----
 ------------------
 
+dap.adapters.nlua = function(callback, config)
+	callback({ type = "server", host = config.host or "127.0.0.1" })
+end
+
+dap.configurations.lua = {
+	name = "Neovim Lua",
+	type = "nlua",
+	request = "attach",
+}
+
 ------------------
 ---- Gdscript ----
 ------------------
