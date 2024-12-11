@@ -14,7 +14,7 @@ dap.adapters.gdb = {
 dap.adapters.lldb = {
 	name = "lldb",
 	type = "executable",
-	command = vim.fn.exepath("lldb"),
+	command = vim.fn.exepath("lldb-dap"),
 }
 
 dap.configurations.c = dap.configurations.cpp
