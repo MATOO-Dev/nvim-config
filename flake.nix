@@ -153,6 +153,7 @@
               lldb
               netcoredbg
               one-small-step-for-vimkind
+              vscode-extensions.vscjava.vscode-java-debug
             ];
           };
 

@@ -1,6 +1,7 @@
 require("lze").load({
 	{
 		"nvim-dap",
+		dep_of = "nvim-jdtls",
 		keys = {
 			{ "<f5>", desc = "Debug: Start/Continue" },
 			{ "<s-f5>", desc = "Debug: Stop" },
