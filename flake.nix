@@ -152,7 +152,6 @@
               gdb
               lldb
               netcoredbg
-              one-small-step-for-vimkind
               vscode-extensions.vscjava.vscode-java-debug
             ];
           };
@@ -220,6 +219,7 @@
               nvim-dap-virtual-text
               #java
               nvim-jdtls
+              # one-small-step-for-vimkind
             ];
           };
 
