@@ -1,9 +1,7 @@
 ##################
 #### top prio ####
 ##################
-nvim-jdtls
 dap
-flash
 obsidian
 scrollbar
 godot

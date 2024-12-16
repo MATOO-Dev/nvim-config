@@ -6,6 +6,7 @@ require("lze").load({
 	{ import = "matoo.plugins.lazy.comment" },
 	{ import = "matoo.plugins.lazy.completion" },
 	{ import = "matoo.plugins.lazy.conform" },
+	{ import = "matoo.plugins.lazy.flash" },
 	{ import = "matoo.plugins.lazy.folding" },
 	{ import = "matoo.plugins.lazy.gitsigns" },
 	{ import = "matoo.plugins.lazy.hardtime" },

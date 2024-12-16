@@ -144,6 +144,7 @@
               nvim-dap-ui
               nvim-dap-virtual-text
               # one-small-step-for-vimkind
+              flash-nvim
             ];
           };
 
