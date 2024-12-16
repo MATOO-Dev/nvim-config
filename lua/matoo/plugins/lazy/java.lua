@@ -7,8 +7,7 @@ return {
 		local jdtls_path = vim.fn.exepath("jdtls")
 		local extendedClientCapabilities = require("jdtls").extendedClientCapabilities
 		extendedClientCapabilities.resolveAdditionalTextEditsSupport = true
-		-- local jda_path = nixCats("vscode-extensions.vscjava.vscode-java-debug")
-		local bundles = {}
+		local daptest
 		if nixCats("javaExtras") then
 			local jda_path = nixCats("javaExtras.java-dap")
 			local jda_server_jar = vim.fn.glob(
@@ -16,6 +15,7 @@ return {
 					.. "/share/vscode/extensions/vscjava.vscode-java-debug/server/com.microsoft.java.debug.plugin-*.jar"
 			)
 			if jda_server_jar then
+				local bundles = {}
 				vim.list_extend(bundles, vim.split(jda_server_jar, "\n"))
 			end
 		end
@@ -42,7 +42,7 @@ return {
 			-- 	"-data",
 			-- 	workspace_dir,
 			-- },
-			-- -- capabilities = require("matoo.lsps.init").GetCapabilities(),
+			-- capabilities = require("matoo.lsps.init").GetCapabilities(),
 			root_dir = vim.fs.root(0, { ".git", "mvnw", "gradlew" }),
 			-- settings = {
 			-- 	java = { updateBuildConfiguration = "interactive" },
@@ -58,6 +58,7 @@ return {
 			-- 	extendedClientCapabilities = extendedClientCapabilities,
 			-- },
 			-- init_options = { bundles = bundles },
+			init_options = { bundles = daptest },
 		}
 		require("jdtls").start_or_attach(config)
 	end,
