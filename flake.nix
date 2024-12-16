@@ -19,8 +19,9 @@
       inherit (nixCats) utils;
       luaPath = "${./.}";
       forEachSystem = utils.eachSystem nixpkgs.lib.platforms.all;
-      extra_pkg_config = {
-      };
+      extra_pkg_config =
+        {
+        };
       inherit
         (forEachSystem (
           system:
@@ -142,15 +143,15 @@
               nvim-nio
               nvim-dap-ui
               nvim-dap-virtual-text
-              #java
-              nvim-jdtls
               # one-small-step-for-vimkind
             ];
           };
 
           sharedLibraries = {
-            general = with pkgs; [
-            ];
+            general =
+              with pkgs;
+              [
+              ];
           };
 
           environmentVariables = {
@@ -171,14 +172,6 @@
 
           extraLuaPackages = {
             test = [ (_: [ ]) ];
-          };
-        };
-
-      matoo_extra =
-        { pkgs, ... }@misc:
-        {
-          javaExtras = {
-            java-debug-adapter = pkgs.vscode-extensions.vscjava.vscode-java-debug;
           };
         };
 
@@ -203,7 +196,6 @@
               ];
             };
           };
-          extra = matoo_extra args // { };
         };
       };
       defaultPackageName = "nvim";

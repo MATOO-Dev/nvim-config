@@ -93,8 +93,3 @@ dap.configurations.gdscript = {
 	request = "launch",
 	project = "${workspaceFolder}",
 }
-
---------------
----- Java ----
---------------
--- java is a bit of a pain to get working, this is delegated to nvim-jdtls
