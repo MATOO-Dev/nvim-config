@@ -1,14 +1,14 @@
 require("nvim-web-devicons").setup()
 
-require("oil").setup {
+require("oil").setup({
 	default_file_explorer = true,
 	columns = {
 		"icon",
 	},
 	use_default_keymaps = true,
 	keymaps = {
-		["<bs>"] = "actions.parent"
+		["<bs>"] = "actions.parent",
 	},
-}
+})
 
-vim.keymap.set("n", "<leader>ol", "<cmd>Oil<cr>")
+vim.keymap.set("n", "<leader>ol", "<cmd>Oil<cr>", { desc = "[O]i[L]" })

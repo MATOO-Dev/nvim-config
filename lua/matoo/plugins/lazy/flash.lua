@@ -8,7 +8,7 @@ return {
 			function()
 				require("flash").jump()
 			end,
-			desc = "Flash",
+			desc = "Flash Jump",
 		},
 		{
 			"S",
@@ -24,7 +24,7 @@ return {
 			function()
 				require("flash").remote()
 			end,
-			desc = "Remote Flash",
+			desc = "Flash Remote",
 		},
 		{
 			"R",
@@ -32,7 +32,7 @@ return {
 			function()
 				require("flash").treesitter_search()
 			end,
-			desc = "Treesitter Search",
+			desc = "Flash Treesitter Remote",
 		},
 		{
 			"<c-s>",
@@ -40,7 +40,7 @@ return {
 			function()
 				require("flash").toggle()
 			end,
-			desc = "Toggle Flash Search",
+			desc = "Flash Toggle Search",
 		},
 	},
 }
