@@ -19,9 +19,8 @@
       inherit (nixCats) utils;
       luaPath = "${./.}";
       forEachSystem = utils.eachSystem nixpkgs.lib.platforms.all;
-      extra_pkg_config =
-        {
-        };
+      extra_pkg_config = {
+      };
       inherit
         (forEachSystem (
           system:
@@ -124,6 +123,8 @@
               hardtime-nvim
               nvim-ufo
               vim-tmux-navigator
+              flash-nvim
+              which-key-nvim
               # visual fanciness
               indent-blankline-nvim
               gitsigns-nvim
@@ -144,15 +145,12 @@
               nvim-dap-ui
               nvim-dap-virtual-text
               # one-small-step-for-vimkind
-              flash-nvim
             ];
           };
 
           sharedLibraries = {
-            general =
-              with pkgs;
-              [
-              ];
+            general = with pkgs; [
+            ];
           };
 
           environmentVariables = {

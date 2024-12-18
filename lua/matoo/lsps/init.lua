@@ -18,7 +18,6 @@ require("lze").load({
 		vim.diagnostic.config({
 			update_in_insert = true,
 		})
-		-- todo: define keybinds for lsp operations, ie rename
 		local servers = require("matoo.lsps.servers")
 		for server, config in pairs(servers) do
 			require("lspconfig")[server].setup({
@@ -30,5 +29,14 @@ require("lze").load({
 			})
 			-- vim.api.nvim_exec_autocmds("FileType", {})
 		end
+		-- todo: define keybinds for lsp operations, ie rename
+		-- defaults:
+		-- vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "[G]oto [D]efinition" })
+		-- vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "[G]oto [D]eclaration" })
+		-- vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "[G]oto [R]eferences" })
+		-- vim.keymap.set("n", "gi", vim.lsp.buf.implementations, { desc = "[G]oto [I]mplementations" })
+		-- vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[n]ame" })
+		-- vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ction" })
+		-- vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover Documentation" })
 	end,
 })

@@ -19,4 +19,5 @@ require("lze").load({
 	{ import = "matoo.plugins.lazy.trouble" },
 	{ import = "matoo.plugins.lazy.typst" },
 	{ import = "matoo.plugins.lazy.undotree" },
+	{ import = "matoo.plugins.lazy.whichkey" },
 })
