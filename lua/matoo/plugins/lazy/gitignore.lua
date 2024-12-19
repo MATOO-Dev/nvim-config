@@ -6,8 +6,6 @@ return {
 	},
 	after = function()
 		require("gitignore")
-		local path = vim.fn.getcwd()
-		path = vim.loop.cwd()
 		vim.keymap.set("n", "<leader>gi", require("gitignore").generate, { desc = "Generate [G]it[I]gnore" })
 	end,
 }
