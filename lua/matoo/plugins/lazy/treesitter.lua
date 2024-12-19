@@ -1,6 +1,7 @@
 return {
 	"nvim-treesitter",
 	event = "DeferredUIEnter",
+	dep_of = "treesj",
 	load = function(name)
 		vim.cmd.packadd(name)
 		vim.cmd.packadd("nvim-treesitter-textobjects")
