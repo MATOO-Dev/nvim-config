@@ -8,6 +8,7 @@ require("lze").load({
 	{ import = "matoo.plugins.lazy.conform" },
 	{ import = "matoo.plugins.lazy.flash" },
 	{ import = "matoo.plugins.lazy.folding" },
+	{ import = "matoo.plugins.lazy.gitignore" },
 	{ import = "matoo.plugins.lazy.gitsigns" },
 	{ import = "matoo.plugins.lazy.hardtime" },
 	{ import = "matoo.plugins.lazy.lualine" },

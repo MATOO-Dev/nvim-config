@@ -127,8 +127,10 @@
               which-key-nvim
               # visual fanciness
               indent-blankline-nvim
+              # git
               gitsigns-nvim
-              #typst
+              gitignore-nvim
+              # typst
               typst-vim
               typst-preview-nvim
               typst-conceal-vim
@@ -139,7 +141,7 @@
               comment-nvim
               conform-nvim
               nvim-surround
-              #DAP
+              # DAP
               nvim-dap
               nvim-nio
               nvim-dap-ui

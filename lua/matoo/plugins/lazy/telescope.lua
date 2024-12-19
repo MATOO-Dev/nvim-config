@@ -1,7 +1,7 @@
 return {
 	"telescope.nvim",
 	cmd = "Telescope",
-	dep_of = "obsidian.nvim",
+	dep_of = { "obsidian.nvim", "gitignore.nvim" },
 	keys = {
 		{ "<leader>ff", desc = "Telescope: [F]ind [F]iles" },
 	},
