@@ -14,6 +14,7 @@ require("lze").load({
 	{ import = "matoo.plugins.lazy.lualine" },
 	{ import = "matoo.plugins.lazy.move" },
 	{ import = "matoo.plugins.lazy.obsidian" },
+	{ import = "matoo.plugins.lazy.overseer" },
 	{ import = "matoo.plugins.lazy.surround" },
 	{ import = "matoo.plugins.lazy.telescope" },
 	{ import = "matoo.plugins.lazy.tmux-navigator" },

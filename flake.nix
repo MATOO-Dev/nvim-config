@@ -149,6 +149,8 @@
               # one-small-step-for-vimkind
               # notetaking
               obsidian-nvim
+              # utils
+              overseer-nvim
             ];
           };
 
