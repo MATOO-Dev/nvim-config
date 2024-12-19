@@ -67,7 +67,6 @@
               # Typst
               tinymist
               # formatters
-              alejandra
               astyle
               csharpier
               gdtoolkit_4
@@ -141,6 +140,7 @@
               comment-nvim
               conform-nvim
               nvim-surround
+              treesj
               # DAP
               nvim-dap
               nvim-nio

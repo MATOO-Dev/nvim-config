@@ -4,6 +4,11 @@ return {
 	cmd = "ConformInfo",
 	after = function()
 		require("conform").setup({
+			notify_on_error = true,
+			format_on_save = {
+				lsp_format = "fallback",
+				timeout_ms = 500,
+			},
 			formatters_by_ft = {
 				lua = { "stylua" },
 				c = { "astyle" },
@@ -11,16 +16,23 @@ return {
 				cs = { "csharpier" },
 				gdscript = { "gdformat" },
 				java = { "astyle" },
-				nix = { "alejandra", "nixfmt" },
+				nix = { "nixfmt" },
 				rust = { "rustfmt" },
 				tex = { "tex-fmt" },
 				typst = { "typstyle" },
 			},
-			format_on_save = {
-				lsp_format = "fallback",
-				timeout_ms = 500,
+			formatters = {
+				astyle = {
+					inherit = true,
+					args = {
+						"-t4",
+					},
+				},
+				nixfmt = {
+					inherit = true,
+					--customization of tab width is not yet supported
+				},
 			},
-			notify_on_error = true,
 		})
 	end,
 }

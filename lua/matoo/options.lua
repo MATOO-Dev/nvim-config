@@ -4,8 +4,8 @@ vim.opt.relativenumber = true
 
 -- ensure tabs are always 4 spaces wide, and are actually tabs instead of spaces
 vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 0
 vim.opt.expandtab = false
 
 -- disable wrap by default, but if wrap is manually enabled, break between words
