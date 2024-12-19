@@ -60,3 +60,6 @@ vim.opt.isfname:append("@-@")
 
 -- fast updatetime
 vim.opt.updatetime = 50
+
+-- higher concealevel for obsidian, typst, etc.
+vim.opt.conceallevel = 2

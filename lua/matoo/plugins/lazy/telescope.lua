@@ -1,6 +1,7 @@
 return {
 	"telescope.nvim",
 	cmd = "Telescope",
+	dep_of = "obsidian.nvim",
 	keys = {
 		{ "<leader>ff", desc = "Telescope: [F]ind [F]iles" },
 	},
