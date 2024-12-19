@@ -1,41 +1,41 @@
 ##################
 #### top prio ####
 ##################
+colortils
 dap
-scrollbar
-godot
-lint
+floaterm
+illuminate
+image.nvim
+noice
+notify
+overseer
+project
+treesj
 
 ##################
 #### mid prio ####
 ##################
-floaterm
 fugitive
-illuminate
-image.nvim
 navbuddy
-treesj
+supertab
+tagbar
 
 ##################
 #### bot prio ####
 ##################
 barbecue
 codesnap
-colortils
-overseer
 cursorline
 dashboard
 dropbar
 firenvim
 fzf
 harpoon
+lint
 navic
 neotest
 nix
-noice
-notify
 orgmode
-project
 replace-with-register
-supertab
-tagbar
+scrollbar / minimap
+snacks
