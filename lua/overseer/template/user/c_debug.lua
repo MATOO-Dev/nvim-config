@@ -1,14 +1,14 @@
 return {
-	name = "C++: compile",
+	name = "C: compile with debug flags",
 	builder = function()
 		local file = vim.fn.expand("%:p")
 		return {
-			cmd = { "g++" },
-			args = { file },
+			cmd = { "gcc" },
+			args = { file, "-g" },
 			components = { { "on_output_quickfix", open = true }, "default" },
 		}
 	end,
 	condition = {
-		filetype = { "cpp" },
+		filetype = { "c" },
 	},
 }

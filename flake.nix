@@ -150,6 +150,7 @@
               # notetaking
               obsidian-nvim
               # utils
+              dressing-nvim
               overseer-nvim
             ];
           };
