@@ -3,14 +3,14 @@
 ##################
 colortils
 dap
+diffview
 floaterm
 illuminate
 image.nvim
+marks.nvim
 noice
 notify
-overseer
 project
-treesj
 
 ##################
 #### mid prio ####
@@ -24,6 +24,7 @@ tagbar
 #### bot prio ####
 ##################
 barbecue
+blink.cmp
 codesnap
 cursorline
 dashboard
