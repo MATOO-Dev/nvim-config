@@ -1,30 +1,35 @@
 ##################
 #### top prio ####
 ##################
-colortils
+# (stuff i probably want to include or im currently configuring)
 dap
 diffview
 floaterm
 illuminate
 image.nvim
 marks.nvim
+minty + nvim-highlight-colors
 noice
 notify
 project
+quicker
 
 ##################
 #### mid prio ####
 ##################
+# (stuff im still thinking about)
+blink.cmp
 fugitive
 navbuddy
+snacks
 supertab
 tagbar
 
 ##################
 #### bot prio ####
 ##################
+# (stuff i still gotta look at, just to remember the names)
 barbecue
-blink.cmp
 codesnap
 cursorline
 dashboard
@@ -33,10 +38,12 @@ firenvim
 fzf
 harpoon
 lint
+lsp_lines
+markview
+multicursors
 navic
 neotest
 nix
 orgmode
 replace-with-register
 scrollbar / minimap
-snacks
