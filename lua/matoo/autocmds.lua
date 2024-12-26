@@ -10,7 +10,7 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 -- automatically open typst preview
 vim.api.nvim_create_autocmd("BufReadPost", {
 	pattern = "*.typ",
-	-- command = "TypstPreview",
+	command = "TypstPreview",
 	command = "",
 	group = ftgroup,
 })

@@ -17,7 +17,7 @@ return {
 	gdscript = {},
 	gdshader_lsp = {},
 	jdtls = {},
-	marksman = {},
+	-- marksman = {},
 	nixd = {
 		nixpkgs = {
 			expr = "import <nixpkgs> { }",
