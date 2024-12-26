@@ -2,7 +2,7 @@ local ftgroup = vim.api.nvim_create_augroup("ft", { clear = true })
 
 -- enable wrapping for certain file types
 vim.api.nvim_create_autocmd("BufReadPost", {
-	pattern = { "*.typ", "*.txt" },
+	pattern = { "*.typ", "*.md", "*.txt" },
 	command = "setlocal wrap",
 	group = ftgroup,
 })
@@ -10,6 +10,7 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 -- automatically open typst preview
 vim.api.nvim_create_autocmd("BufReadPost", {
 	pattern = "*.typ",
-	command = "TypstPreview",
+	-- command = "TypstPreview",
+	command = "",
 	group = ftgroup,
 })

@@ -1,5 +1,7 @@
 require("matoo.plugins.colorscheme")
+require("nvim-web-devicons").setup()
 require("matoo.plugins.oil")
+-- require("magick")
 
 require("lze").load({
 	{ import = "matoo.plugins.lazy.autopairs" },
@@ -11,7 +13,9 @@ require("lze").load({
 	{ import = "matoo.plugins.lazy.gitignore" },
 	{ import = "matoo.plugins.lazy.gitsigns" },
 	{ import = "matoo.plugins.lazy.hardtime" },
+	-- { import = "matoo.plugins.lazy.image" },
 	{ import = "matoo.plugins.lazy.lualine" },
+	{ import = "matoo.plugins.lazy.markview" },
 	{ import = "matoo.plugins.lazy.move" },
 	{ import = "matoo.plugins.lazy.obsidian" },
 	{ import = "matoo.plugins.lazy.overseer" },
