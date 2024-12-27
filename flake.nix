@@ -44,17 +44,6 @@
           name,
           ...
         }@packageDef:
-        let
-          magick = pkgs.vimUtils.buildVimPlugin {
-            name = "magick-nvim";
-            src = pkgs.fetchFromGitHub {
-              owner = "kiyoon";
-              repo = "magick.nvim";
-              rev = "d7118ebf2d2d544a865058fc8bfd7c5bfea7db22";
-              hash = "sha256-lYYmOPF5YTZVT4ndIfZ/FWmIvj4QXJIC1r5hORM9efI=";
-            };
-          };
-        in
         {
           lspsAndRuntimeDeps = {
             general = with pkgs; [
@@ -102,7 +91,6 @@
             gitPlugins = with pkgs.neovimPlugins; [ ];
             general = with pkgs.vimPlugins; [
               lze
-              magick
               monokai-pro-nvim
               nvim-web-devicons
               oil-nvim

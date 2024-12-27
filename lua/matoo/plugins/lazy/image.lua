@@ -1,7 +1,6 @@
 return {
 	"image.nvim",
-	ft = { "typst", "markdown" },
-	build = false,
+	-- ft = { "typst", "markdown" },
 	after = function()
 		require("image").setup({
 			backend = "kitty",
