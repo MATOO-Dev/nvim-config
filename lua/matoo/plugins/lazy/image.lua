@@ -1,6 +1,6 @@
 return {
 	"image.nvim",
-	-- ft = { "typst", "markdown" },
+	ft = { "typst", "markdown" },
 	after = function()
 		require("image").setup({
 			backend = "kitty",
@@ -16,6 +16,7 @@ return {
 				},
 			},
 			hijack_file_patterns = {
+				"*.svg",
 				"*.png",
 				"*.jpg",
 				"*.jpeg",
